@@ -1,0 +1,12 @@
+{% extends "hello/layout.html" %} 
+{% load static %} 
+{% block title %} About us {% endblock %} 
+{% block content %}
+<div class="container">
+      <h1>Выбери квест ◉_◉</h1>
+    <div class="kvests">
+      <a href="{% url 'kvest1' %}"><img id="kvest_main_1" class="kwest" src="{% static 'hello/kvest_1_cover.png' %}"></a>
+      <a href="{% url 'kvest2' %}"><img id="kvest_main_2" class="kwest" src="{% static 'hello/kvest_2_cover.png' %}"></a>
+    </div>
+</div>
+{% endblock %}

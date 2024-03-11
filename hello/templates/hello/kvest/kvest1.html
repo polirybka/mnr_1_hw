@@ -1,0 +1,18 @@
+{% extends "hello/layout.html" %} 
+{% load static %} 
+{% block title %} About us {% endblock %} 
+{% block content %}
+<img class="room_cover" src="{% static 'hello/room_main_1.png' %}">
+<div class="title">Монстрляндия</div>
+<div class="under_room">
+  <p class="description">Вкус — один из видов хеморецепции; ощущение, возникающее при действии<br>
+    различных веществ преимущественно на рецепторы вкуса (расположенные <br>на вкусовых луковицах
+    языка, а также задней стенки глотки, мягкого нёба, <br>миндалины, надгортанника)</p>
+<p class="mode">90 мин<br>
+2-6 игроков<br>
+сложность 3/5</p>
+</div>
+<div class="button_bron"><p>ЗАБРОНИРОВАТЬ</p></div>
+<img class="room_img_1" src="{% static 'hello/room_img_1.png' %}">
+<img class="room_img_2" src="{% static 'hello/room_img_2.png' %}">
+{% endblock %}

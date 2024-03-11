@@ -1,0 +1,19 @@
+{% extends "hello/layout.html" %} 
+{% load static %} 
+{% block title %} Contact us 
+{% endblock %} 
+{% block content %}
+<img class="room_cover" src="{% static 'hello/room_main_2.png' %}">
+<div class="title">Неоновый лес</div>
+<div class="under_room">
+  <p class="description">Неон-бесцветный, без запаха, инертный одноатомный газ<br>
+    в стандартных условиях, плотность которого составляет <br>около двух третей
+    плотности воздуха.</p>
+<p class="mode">35 мин<br>
+  24-6 игроков<br>
+  сложность 5/5</p>
+</div>
+<div class="button_bron"><p>ЗАБРОНИРОВАТЬ</p></div>
+<img class="room_img_1" id="two_mode" src="{% static 'hello/room_img_3.png' %}">
+<img class="room_img_2" src="{% static 'hello/room_img_4.png' %}">
+{% endblock %}

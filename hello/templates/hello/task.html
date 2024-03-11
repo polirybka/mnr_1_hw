@@ -1,0 +1,27 @@
+<!-- Ваш проект/templates/task.html -->
+{% extends "hello/layout.html" %} 
+{% load static %} 
+{% block title %} 
+    Task
+{% endblock %} 
+{% block content %}
+    <div class="container py-5">
+      <h1>Реши задачку</h1>
+        <form  method="post" action="{% url 'task' %}">
+            {% csrf_token %}
+            <p>Задача: 1005. 
+              Определить, какое место в плацкартном вагоне досталось: верхнее или нижнее, в купе или боковое.</p>
+            
+            {{ form.as_p }}
+            
+            <input class="hover" style="height: 50px;" type="image" src="{% static 'hello/button.png' %}" alt="Получить ответ">
+        </form>
+
+        {% if result %}
+            <p>Ответ: {{ result }}</p>
+            <form method="get" action="{% url 'task' %}">
+                <input class="hover" style="height: 120px;" type="image" src="{% static 'hello/again.png' %}" alt="Повторить" />
+            </form>
+        {% endif %}
+    </div>
+{% endblock %} 

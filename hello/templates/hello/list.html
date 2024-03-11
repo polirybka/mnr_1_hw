@@ -1,0 +1,49 @@
+{% extends "hello/layout.html" %} 
+{% load static %}
+{% block title %} лист {% endblock %} 
+
+{% block content%}
+
+<div class="container">
+  <h1>Я и моя образовательная программа</h1>
+
+  <div class="xex">
+      <div class="card">
+          <p><strong>Моё имя:</strong> {{my.name}}</p>
+          <p><strong>Мейл:</strong> {{my.mail}}</p>
+          <p><strong>Телефон:</strong> {{my.phone}}</p>
+          <p><strong>Название ОП:</strong> {{program.name}}</p>
+          <p><strong>Описание ОП:</strong> {{program.description}}</p>
+          <p><strong><img src={{my.img}} height="150"></strong></p>
+      </div>
+
+      <div class="card">
+          
+          <p><strong>Руководитель ОП:</strong> {{program.ruk.name}}</p>
+          <p><strong>Мейл:</strong> {{program.ruk.mail}}</p>
+          <p><strong><img src={{program.ruk.img}} height="150"></strong></p>
+      </div>
+
+      <div class="card">
+          <p><strong>Менеджер ОП:</strong> {{program.men.name}}</p>
+          <p><strong>Мейл:</strong> {{program.men.mail}}</p>
+          <p><strong><img src={{program.men.img}} height="150"></strong></p>
+      </div>
+
+      <div class="card">
+          <p><strong>Друг:</strong> {{friend_1.name}}</p>
+          <p><strong>Мейл:</strong> {{friend_1.mail}}</p>
+          <p><strong>Телефон:</strong> {{friend_1.phone}}</p>
+          <p><strong><img src={{friend_1.img}} height="150"></strong></p>
+      </div>
+
+      <div class="card">
+          <p><strong>Друг:</strong> {{friend_2.name}}</p>
+          <p><strong>Мейл:</strong> {{friend_2.mail}}</p>
+          <p><strong>Телефон:</strong> {{friend_2.phone}}</p>
+          <p><strong><img src={{friend_2.img}} height="150"></strong></p>
+      </div>
+  </div>
+</div>
+
+{% endblock %}

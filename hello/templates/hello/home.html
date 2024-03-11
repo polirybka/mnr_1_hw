@@ -1,0 +1,70 @@
+{% extends "hello/layout.html" %} {% load static %} 
+{% block title %} Home 
+{% endblock %} 
+{% block content %}
+<div class="container">
+  <h1 >Оранжерея кошмаров</h1>
+  <div class="directions">
+    <a class="cool" href="#text"><p>Текстик</p></a>
+    <a class="cool" href="#images"><p>Картинки</p></a>
+    <a class="cool" href="#spiski"><p>Списки</p></a>
+    
+    
+  </div>
+  <img class="room_cover" title="Оранжерея" src="{% static 'hello/about_cover.png' %}" />
+  <p class="descriptionA">
+    Green spooky house — это культурное пространство, основанное в сентября
+    2021 года. <br />Проект вырос из небольшой организации, которая создавала
+    квесты <br />на территории полуразрушенной оранжереи.
+  </p>
+
+ 
+
+  <a class="subtitle" name="text">Текстик</a>
+  <p class="descriptionA">
+    Green Spooky House приглашает посетителей погрузиться в захватывающий мир загадок и тайн, окруженных зелеными плющами и древесными порослями. Каждый уголок дома пропитан атмосферой загадочности, призванной вызывать восторг и дрожь одновременно. Мероприятия, проводимые в этом пространстве, включают в себя выставки современных художников, лекции по исследованию истории оранжереи, а также интерактивные театральные представления, погружающие гостей в атмосферу мистики.
+  </p>
+  <p class="descriptionA">
+    Green Spooky House стало не просто местом для проведения развлекательных событий, но и площадкой для культурного обмена и вдохновения. Здесь исследуют историю прошлого, обрамленную таинственной зеленью, и создают новые истории, придавая свежий взгляд на культурное наследие. 
+    <a style="color: red;" href="https://ru.wikipedia.org/wiki/%D0%9E%D1%80%D0%B0%D0%BD%D0%B6%D0%B5%D1%80%D0%B5%D1%8F">Дом</a> стал оазисом для тех, кто ищет нечто необычное и увлекательное в сердце искусства и загадок.
+  </p>
+  
+  <a class="subtitle" name="images">Картинки</a>
+<div class="gallery">
+  <img class="gallery_item" title="илюстрашка)" src="{% static 'hello/gallery/dom_2.png' %}" />
+  <img class="gallery_item" title="илюстрашка)" src="{% static 'hello/gallery/dom_3.png' %}" />
+  <img class="gallery_item" title="илюстрашка)" src="{% static 'hello/gallery/dom_4.png' %}" />
+  <img class="gallery_item" title="илюстрашка)" src="{% static 'hello/gallery/dom_5.png' %}" />
+  <img class="gallery_item" title="илюстрашка)" src="{% static 'hello/gallery/dom_6.png' %}" />
+  <img class="gallery_item" title="илюстрашка)" src="{% static 'hello/gallery/dom_8.png' %}" />
+
+</div>
+<a class="subtitle" name="spiski">Списки</a>
+  <div class="list">
+    <ul class="numbers" type="square">
+      <li>Дизайнеры плачут</li>
+      <ol class="numbers2" type="I">
+        <li>им занимажают оценки</li>
+        <li>у них нет времени</li>
+        <li>их не любят</li>
+      </ol>
+      <li>Дизайнеры едят блин</li>
+      <li>Дизайнеры любят молочные коктейли</li>
+    </ul>
+    <ol class="ol" type="a">
+      <li>Посмотреть евангелион</li>
+      <ul class="ul">
+        <li>Плакать</li>
+        <li>Ещё плакать</li>
+      </ul>
+      <li>Посмотреть наруто</li>
+      <ul class="ul">
+        <li>Плакать</li>
+        <li>И ещё плакать</li>
+      </ul>
+    </ol>
+  </div>
+
+  <a class="subtitle" href="#begin"> ⬆️ </a>
+
+</div>{% endblock %}
